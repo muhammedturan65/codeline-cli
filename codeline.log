@@ -1,0 +1,12 @@
+[2026-03-20T22:24:02.928Z] [INFO] Loading history and policies...
+[2026-03-20T22:24:02.943Z] [INFO] Project context loaded and injected into system prompt.
+[2026-03-20T22:24:08.834Z] [INFO] Processing user input {"userInput":"ür kırmızısı dokunuşları.\r\rBölümler: Hakkımda (özet), Şiirler, Kitaplar/Eserler ve İletişim (simetrik bir form).\r\rTeknik Özellikler: Tamamen responsive (mobil uyumlu), pürüzsüz kaydırma (smooth scroll) ve basit CSS animasyonları (fade-in) ekle. Kod tek bir HTML dosyasında, CSS Tailwind sınıflarıyla yazılmış olsun.\""}
+[2026-03-20T22:24:08.843Z] [INFO] Sending request to model {"model":"stepfun/step-3.5-flash:free","messagesCount":2,"lastRole":"user"}
+[2026-03-20T22:24:15.857Z] [INFO] Policy decision {"toolName":"listDirectory","args":{"dirPath":"."},"decision":"ASK_USER"}
+[2026-03-20T22:24:23.242Z] [INFO] Executing tool {"toolName":"listDirectory","args":{"dirPath":"."}}
+[2026-03-20T22:24:23.248Z] [INFO] Tool execution success {"toolName":"listDirectory"}
+[2026-03-20T22:24:23.249Z] [INFO] Policy decision {"toolName":"listDirectory","args":{"dirPath":"packages"},"decision":"ASK_USER"}
+[2026-03-20T22:24:24.769Z] [INFO] Executing tool {"toolName":"listDirectory","args":{"dirPath":"packages"}}
+[2026-03-20T22:24:24.777Z] [INFO] Tool execution success {"toolName":"listDirectory"}
+[2026-03-20T22:24:24.777Z] [INFO] Sending request to model {"model":"stepfun/step-3.5-flash:free","messagesCount":5,"lastRole":"tool"}
+[2026-03-20T22:24:25.547Z] [ERROR] Stream chat request failed {"error":"400 Provider returned error","stack":"Error: 400 Provider returned error\n    at APIError.generate (file:///C:/Users/Pc/Desktop/ai-agents/packages/core/node_modules/openai/error.mjs:41:20)\n    at OpenAI.makeStatusError (file:///C:/Users/Pc/Desktop/ai-agents/packages/core/node_modules/openai/core.mjs:295:25)\n    at OpenAI.makeRequest (file:///C:/Users/Pc/Desktop/ai-agents/packages/core/node_modules/openai/core.mjs:339:30)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async OpenRouterClient.streamChat (file:///C:/Users/Pc/Desktop/ai-agents/packages/core/dist/OpenRouterClient.js:32:24)\n    at async AgentScheduler.process (file:///C:/Users/Pc/Desktop/ai-agents/packages/core/dist/AgentScheduler.js:64:26)\n    at async handleSubmit (file:///C:/Users/Pc/Desktop/ai-agents/packages/cli/dist/App.js:111:13)"}

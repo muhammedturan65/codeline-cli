@@ -1,0 +1,19 @@
+{
+  "name": "@ai-agent/core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1",
+    "openai": "^4.28.0",
+    "socket.io": "^4.8.3",
+    "zod": "^3.22.4"
+  }
+}
